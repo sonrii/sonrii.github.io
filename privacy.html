@@ -5,234 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Política de Privacidad de PuntoSeguro — cómo recopilamos, usamos y protegemos tu información." />
   <title>Política de Privacidad — PuntoSeguro</title>
-  <style>
-    :root {
-      --primary:       #1565C0;
-      --primary-dark:  #0D47A1;
-      --primary-light: #E3F2FD;
-      --accent:        #29B6F6;
-      --text:          #1C1C1E;
-      --text-muted:    #6E6E73;
-      --border:        #E0E0E0;
-      --surface:       #FFFFFF;
-      --bg:            #F5F7FA;
-      --max-w:         740px;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                   Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.75;
-      font-size: 16px;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ── Header ────────────────────────────────────────────────────────────── */
-    header {
-      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, #1976D2 100%);
-      color: #fff;
-      padding: 56px 24px 48px;
-      text-align: center;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      opacity: 0.82;
-      margin-bottom: 20px;
-    }
-
-    .brand-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--accent);
-    }
-
-    header h1 {
-      font-size: clamp(26px, 5vw, 38px);
-      font-weight: 900;
-      letter-spacing: -0.5px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 15px;
-      opacity: 0.72;
-      max-width: 420px;
-      margin: 0 auto;
-    }
-
-    /* ── Main layout ───────────────────────────────────────────────────────── */
-    main {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 48px 24px 64px;
-    }
-
-    /* ── Update badge ──────────────────────────────────────────────────────── */
-    .meta {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 36px;
-      flex-wrap: wrap;
-    }
-
-    .badge {
-      display: inline-block;
-      background: var(--primary-light);
-      color: var(--primary);
-      font-size: 12px;
-      font-weight: 700;
-      padding: 5px 14px;
-      border-radius: 20px;
-      letter-spacing: 0.3px;
-    }
-
-    /* ── Intro card ────────────────────────────────────────────────────────── */
-    .intro-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--primary);
-      border-radius: 12px;
-      padding: 20px 24px;
-      margin-bottom: 44px;
-      font-size: 15px;
-      color: #3a3a3a;
-      line-height: 1.7;
-      box-shadow: 0 1px 4px rgba(0,0,0,.06);
-    }
-
-    /* ── Sections ──────────────────────────────────────────────────────────── */
-    section {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 28px 28px 24px;
-      margin-bottom: 20px;
-      box-shadow: 0 1px 4px rgba(0,0,0,.05);
-    }
-
-    h2 {
-      font-size: 16px;
-      font-weight: 800;
-      color: var(--primary);
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .section-num {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 26px;
-      height: 26px;
-      border-radius: 50%;
-      background: var(--primary-light);
-      color: var(--primary);
-      font-size: 12px;
-      font-weight: 900;
-      flex-shrink: 0;
-    }
-
-    p {
-      font-size: 15px;
-      color: #3a3a3a;
-      margin-bottom: 10px;
-    }
-
-    p:last-child { margin-bottom: 0; }
-
-    ul {
-      margin: 8px 0 4px 0;
-      padding-left: 0;
-      list-style: none;
-    }
-
-    ul li {
-      font-size: 15px;
-      color: #3a3a3a;
-      margin-bottom: 8px;
-      padding-left: 20px;
-      position: relative;
-    }
-
-    ul li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 9px;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
-    }
-
-    strong { font-weight: 700; color: var(--text); }
-
-    /* ── Contact highlight ─────────────────────────────────────────────────── */
-    .contact-pill {
-      display: inline-block;
-      background: var(--primary-light);
-      color: var(--primary);
-      font-weight: 700;
-      font-size: 14px;
-      padding: 8px 18px;
-      border-radius: 8px;
-      margin-top: 4px;
-      word-break: break-all;
-    }
-
-    /* ── Footer ────────────────────────────────────────────────────────────── */
-    footer {
-      border-top: 1px solid var(--border);
-      text-align: center;
-      padding: 28px 24px;
-      font-size: 13px;
-      color: var(--text-muted);
-      background: var(--surface);
-    }
-
-    footer a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    /* ── Responsive ────────────────────────────────────────────────────────── */
-    @media (max-width: 600px) {
-      header  { padding: 40px 20px 36px; }
-      main    { padding: 32px 16px 48px; }
-      section { padding: 22px 20px 18px; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header>
-    <div class="brand">
-      <span class="brand-dot"></span>
-      PuntoSeguro
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-mark">PS</span>
+        PuntoSeguro
+      </a>
+      <ul class="nav-links">
+        <li><a href="privacy.html" class="active">Privacidad</a></li>
+        <li><a href="terms.html">Términos</a></li>
+        <li><a href="delete-account.html">Eliminar cuenta</a></li>
+      </ul>
     </div>
+  </nav>
+
+  <div class="page-hero">
+    <span class="eyebrow">Legal</span>
     <h1>Política de Privacidad</h1>
-    <p>Cómo recopilamos, usamos y protegemos tu información personal.</p>
-  </header>
+    <p class="sub">Cómo recopilamos, usamos y protegemos tu información personal.</p>
+  </div>
 
   <main>
 
-    <div class="meta">
+    <div class="meta-row">
       <span class="badge">📅 Última actualización: marzo de 2026</span>
       <span class="badge">🇦🇷 Aplicable en Argentina</span>
     </div>
@@ -244,74 +43,55 @@
       descritos a continuación.
     </div>
 
-    <section>
-      <h2><span class="section-num">1</span> Información que recopilamos</h2>
+    <div class="section-card">
+      <h2><span class="snum">1</span> Información que recopilamos</h2>
       <p>Para brindarte el servicio, recopilamos únicamente la información necesaria:</p>
       <ul>
-        <li><strong>Datos de cuenta:</strong> nombre, correo electrónico y contraseña (almacenada de forma segura).</li>
-        <li><strong>Datos de perfil:</strong> foto y descripción, ambas opcionales.</li>
+        <li><strong>Datos de cuenta:</strong> nombre, correo electrónico y contraseña (almacenada de forma segura, nunca en texto plano).</li>
+        <li><strong>Datos de perfil:</strong> foto y descripción, ambas opcionales y editables en cualquier momento.</li>
         <li><strong>Verificación de identidad:</strong> imágenes de documento y selfie, utilizadas exclusivamente para validar tu identidad dentro de la plataforma.</li>
         <li><strong>Ubicación aproximada:</strong> para mostrarte publicaciones y servicios cercanos. Solo se accede cuando la app está en uso y con tu permiso explícito.</li>
         <li><strong>Contenido generado:</strong> publicaciones, reseñas y mensajes que creás dentro de la plataforma.</li>
+        <li><strong>Datos de uso:</strong> información anónima sobre cómo usás la app, para mejorar la experiencia.</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <h2><span class="section-num">2</span> Cómo usamos tu información</h2>
+    <div class="section-card">
+      <h2><span class="snum">2</span> Cómo usamos tu información</h2>
       <ul>
         <li>Habilitar el funcionamiento de la aplicación y sus funciones principales.</li>
-        <li>Verificar tu identidad para proteger a todos los usuarios de la comunidad.</li>
-        <li>Mostrarte contenido relevante según tu ubicación.</li>
+        <li>Verificar tu identidad para proteger a todos los miembros de la comunidad.</li>
+        <li>Mostrarte contenido y publicaciones relevantes según tu ubicación.</li>
         <li>Detectar y prevenir fraudes, abusos y actividad maliciosa.</li>
         <li>Enviarte notificaciones relacionadas con tu actividad en la app.</li>
-        <li>Mejorar la experiencia y el rendimiento de la plataforma.</li>
+        <li>Mejorar el rendimiento y la experiencia de la plataforma.</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <h2><span class="section-num">3</span> Compartir información con terceros</h2>
-      <p>
-        No vendemos ni cedemos tu información personal a terceros con fines
-        comerciales o publicitarios. Solo compartimos datos en los siguientes casos:
-      </p>
+    <div class="section-card">
+      <h2><span class="snum">3</span> Compartir información con terceros</h2>
+      <p>No vendemos ni cedemos tu información personal a terceros con fines comerciales o publicitarios. Solo compartimos datos en los siguientes casos:</p>
       <ul>
-        <li><strong>Proveedores técnicos</strong> necesarios para el funcionamiento de la app (infraestructura, autenticación, almacenamiento). Estos proveedores solo pueden usar tus datos para prestarnos el servicio y están sujetos a acuerdos de confidencialidad.</li>
-        <li><strong>Obligaciones legales</strong> cuando la ley o una orden judicial lo requieran.</li>
-        <li><strong>Protección de derechos</strong> cuando sea necesario para proteger la seguridad de usuarios u otras personas.</li>
+        <li><strong>Proveedores técnicos</strong> necesarios para el funcionamiento de la app (infraestructura, autenticación, almacenamiento). Solo pueden usar tus datos para prestarnos el servicio y están sujetos a acuerdos de confidencialidad.</li>
+        <li><strong>Obligaciones legales:</strong> cuando la ley o una orden judicial lo requieran.</li>
+        <li><strong>Protección de derechos:</strong> cuando sea necesario para proteger la seguridad de usuarios u otras personas.</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <h2><span class="section-num">4</span> Retención y eliminación de datos</h2>
-      <p>
-        Conservamos tus datos mientras tu cuenta esté activa o sea necesario para
-        prestar el servicio. Podés eliminar tu cuenta en cualquier momento desde
-        <strong>Configuración → Eliminar cuenta</strong> dentro de la app.
-      </p>
-      <p>
-        Al eliminar tu cuenta, tus datos personales son removidos de nuestros
-        sistemas. Algunas interacciones anteriores pueden conservarse de forma
-        limitada cuando sea necesario para mantener la seguridad y el
-        funcionamiento de la plataforma.
-      </p>
-    </section>
+    <div class="section-card">
+      <h2><span class="snum">4</span> Retención y eliminación de datos</h2>
+      <p>Conservamos tus datos mientras tu cuenta esté activa o sea necesario para prestar el servicio. Podés eliminar tu cuenta en cualquier momento desde <strong>Configuración → Eliminar cuenta</strong> dentro de la app.</p>
+      <p>Al eliminar tu cuenta, tus datos personales son removidos de nuestros sistemas. Algunas interacciones anteriores pueden conservarse de forma limitada cuando sea necesario para mantener la seguridad y el funcionamiento de la plataforma.</p>
+    </div>
 
-    <section>
-      <h2><span class="section-num">5</span> Seguridad</h2>
-      <p>
-        Aplicamos medidas de seguridad técnicas y organizativas para proteger
-        tu información contra accesos no autorizados, pérdida o alteración.
-        Toda la comunicación entre la app y nuestros sistemas está encriptada
-        mediante protocolos estándar de la industria.
-      </p>
-      <p>
-        Sin embargo, ningún sistema es 100 % infalible. Te recomendamos usar
-        una contraseña segura y no compartirla con nadie.
-      </p>
-    </section>
+    <div class="section-card">
+      <h2><span class="snum">5</span> Seguridad</h2>
+      <p>Aplicamos medidas de seguridad técnicas y organizativas para proteger tu información contra accesos no autorizados, pérdida o alteración. Toda la comunicación entre la app y nuestros sistemas está encriptada mediante protocolos estándar de la industria.</p>
+      <p>Sin embargo, ningún sistema es 100 % infalible. Te recomendamos usar una contraseña segura y no compartirla con nadie.</p>
+    </div>
 
-    <section>
-      <h2><span class="section-num">6</span> Tus derechos</h2>
+    <div class="section-card">
+      <h2><span class="snum">6</span> Tus derechos</h2>
       <p>Tenés derecho a:</p>
       <ul>
         <li><strong>Acceder</strong> a los datos que tenemos sobre vos.</li>
@@ -320,32 +100,36 @@
         <li><strong>Revocar</strong> el acceso a tu ubicación o cámara desde la configuración del dispositivo.</li>
         <li><strong>Solicitar información</strong> sobre cómo tratamos tus datos contactándonos directamente.</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <h2><span class="section-num">7</span> Cambios a esta política</h2>
-      <p>
-        Podemos actualizar esta política periódicamente. Cuando lo hagamos,
-        actualizaremos la fecha indicada arriba. Si los cambios son significativos,
-        te notificaremos dentro de la app.
-      </p>
-      <p>
-        El uso continuado de PuntoSeguro después de la publicación de cambios
-        implica tu aceptación de la política actualizada.
-      </p>
-    </section>
+    <div class="section-card">
+      <h2><span class="snum">7</span> Cambios a esta política</h2>
+      <p>Podemos actualizar esta política periódicamente. Cuando lo hagamos, actualizaremos la fecha indicada arriba. Si los cambios son significativos, te notificaremos dentro de la app.</p>
+      <p>El uso continuado de PuntoSeguro después de la publicación de cambios implica tu aceptación de la política actualizada.</p>
+    </div>
 
-    <section>
-      <h2><span class="section-num">8</span> Contacto</h2>
+    <div class="section-card">
+      <h2><span class="snum">8</span> Contacto</h2>
       <p>Si tenés preguntas, solicitudes o reclamos sobre esta política, escribinos a:</p>
-      <div class="contact-pill">soporte@puntoseguro.app</div>
-    </section>
+      <a href="mailto:soporte@puntoseguro.app" class="contact-pill">soporte@puntoseguro.app</a>
+    </div>
 
   </main>
 
   <footer>
-    © 2026 PuntoSeguro. Todos los derechos reservados. &nbsp;·&nbsp;
-    <a href="mailto:soporte@puntoseguro.app">soporte@puntoseguro.app</a>
+    <div class="footer-inner">
+      <a href="index.html" class="footer-brand">
+        <span class="brand-mark" style="width:22px;height:22px;font-size:10px;">PS</span>
+        PuntoSeguro
+      </a>
+      <nav class="footer-links">
+        <a href="privacy.html">Privacidad</a>
+        <a href="terms.html">Términos</a>
+        <a href="delete-account.html">Eliminar cuenta</a>
+        <a href="mailto:soporte@puntoseguro.app">Contacto</a>
+      </nav>
+      <p class="footer-copy">© 2026 PuntoSeguro. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
 </body>
